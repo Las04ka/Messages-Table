@@ -1,0 +1,21 @@
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mat-column-id {
+  flex: 0 0 15%;
+}
+
+.mat-column-name {
+  flex: 0 0 15%;
+}
+
+.mat-column-message {
+  flex: 0 0 55%;
+}
+
+.mat-column-created {
+  flex: 0 0 15%;
+}
