@@ -11,15 +11,23 @@
         matInput
         formControlName="name"
         required />
+      <mat-error *ngIf="form.controls['name'].hasError('required')">
+        message is required
+      </mat-error>
     </mat-form-field>
     <mat-form-field appearance="fill">
       <mat-label>Message</mat-label>
       <textarea
         matInput
         formControlName="message"
-        required></textarea>
+        required>
+      </textarea>
+      <mat-error *ngIf="form.controls['message'].hasError('required')">
+        message is required
+      </mat-error>
     </mat-form-field>
     <button
+      [disabled]="!form.valid"
       mat-raised-button
       color="primary">
       Submit

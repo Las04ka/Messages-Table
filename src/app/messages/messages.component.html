@@ -42,8 +42,6 @@
             {{ message.name }}
           </td>
         </ng-container>
-
-        <!-- Weight Column -->
         <ng-container matColumnDef="message">
           <th
             mat-header-cell
@@ -60,8 +58,6 @@
             }}
           </td>
         </ng-container>
-
-        <!-- Symbol Column -->
         <ng-container matColumnDef="created">
           <th
             mat-header-cell
@@ -74,7 +70,6 @@
             {{ message.created | date : 'shortTime' }}
           </td>
         </ng-container>
-
         <tr
           mat-header-row
           *matHeaderRowDef="displayedColumns"></tr>

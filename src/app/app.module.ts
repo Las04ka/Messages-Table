@@ -18,8 +18,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { AutoUnsubscribeComponent } from './shared/unsubscriber/autounsubscribe';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    AutoUnsubscribeComponent,
+  ],
   imports: [
     AppRoutingModule,
     BrowserModule,
